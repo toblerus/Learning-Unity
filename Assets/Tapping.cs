@@ -7,16 +7,16 @@ using UnityEngine.UI;
 public class Tapping : MonoBehaviour {
     [SerializeField] float logs;
     [SerializeField] float maxLogs;
-    [SerializeField] float cashearnings;
-    [SerializeField] float currentcash;
     [SerializeField] int hits;
+    [SerializeField] CashManager cashManager;
+    [SerializeField] int cashIncrease = 10;
     public Text hitsText;
-    [SerializeField] public Button HitButton;
+
 
 
     void Start ()
     {
-        Button HitButton = HitButton.GetComponent<Button>();
+
 
 	}
 	
@@ -26,10 +26,16 @@ public class Tapping : MonoBehaviour {
 		
 	}
 
-    public void treehit()
+    public void TreeHit()
     {
         hits += 1;
         hitsText.text = "Hits: " + hits.ToString();
 
+
+
+    }
+    public void CashIncrease()
+    {
+        cashManager.CurrentCash += cashIncrease;
     }
 }
