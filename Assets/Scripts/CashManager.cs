@@ -5,13 +5,4 @@ using UnityEngine;
 public class CashManager : MonoBehaviour {
     [SerializeField] public float CurrentCash;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

@@ -8,3 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game.unity
     guid: 2f674b5b1555eb340ad066002037121d
+  - enabled: 1
+    path: Assets/Shop.unity
+    guid: 8a88ae103987f324187ff6845bf6b773
