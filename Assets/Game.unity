@@ -1310,9 +1310,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idleAxeSpeed: 2
+  cashManager: {fileID: 1245273355}
   theTappingScript: {fileID: 1245273353}
   ShopView: {fileID: 2136356356}
   IdleAxeBuyButton: {fileID: 25376769}
+  hitsText: {fileID: 537031}
+  logsText: {fileID: 966543510}
+  cashText: {fileID: 1808220781}
 --- !u!1 &1395657752
 GameObject:
   m_ObjectHideFlags: 0

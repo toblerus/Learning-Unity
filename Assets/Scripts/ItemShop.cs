@@ -6,9 +6,14 @@ using UnityEngine.UI;
 
 public class ItemShop : MonoBehaviour {
     [SerializeField] float idleAxeSpeed;
+    [SerializeField] CashManager cashManager;
     public Tapping theTappingScript;
     public GameObject ShopView;
     public GameObject IdleAxeBuyButton;
+    public Text hitsText;
+    public Text logsText;
+    public Text cashText;
+
     private void Start()
     {
         
@@ -26,11 +31,13 @@ public class ItemShop : MonoBehaviour {
     }
     public void IdleAxeBuy()
     {
-        int cashCheck = PlayerPrefs.GetInt("CurrentCash");
-        if (cashCheck >= 50)
+        if (cashManager.CurrentCash >= 50)
         {
             IdleAxeBuyButton.SetActive(false);
+            cashManager.CurrentCash -= 50;
+            cashText.text = "Cash: " + cashManager.CurrentCash.ToString() + "$";
             InvokeRepeating("IdleAxeFunction", 0f, idleAxeSpeed);
+
         }
     }
     void IdleAxeFunction()
