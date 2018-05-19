@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CashManager : MonoBehaviour {
-    [SerializeField] public float CashEarnings;
     [SerializeField] public float CurrentCash;
 
     // Use this for initialization
