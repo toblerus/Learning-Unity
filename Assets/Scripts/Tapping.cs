@@ -16,15 +16,13 @@ public class Tapping : MonoBehaviour {
     public Text logsText;
     public Text cashText;
 
-
-
     void Start ()
     {
         InvokeRepeating("LogSell", 0f, secondsToSell);
 
-	}
-	
-	void Update ()
+    }
+
+    void Update ()
     {
        
 	}
@@ -48,7 +46,9 @@ public class Tapping : MonoBehaviour {
     public void CashIncrease()
     {
         cashManager.CurrentCash += cashIncrease;
-        cashText.text = "Cash: " + cashManager.CurrentCash.ToString();
+        cashText.text = "Cash: " + cashManager.CurrentCash.ToString() + "$";
+        PlayerPrefs.SetInt("CurrentCash", cashManager.CurrentCash);
+
 
     }
     public void LogsIncrease()
