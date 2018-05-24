@@ -8,7 +8,7 @@ public class ItemShop : MonoBehaviour {
     [SerializeField] float idleAxeSpeed;
     [SerializeField] CashManager cashManager;
     public Tapping theTappingScript;
-    public GameObject ShopView;
+    public GameObject shopView;
     public GameObject IdleAxeBuyButton;
     public Text hitsText;
     public Text logsText;
@@ -18,15 +18,15 @@ public class ItemShop : MonoBehaviour {
     {
         
     }
-    public void shopView()
+    public void ShopView()
     {
-        if (ShopView.activeInHierarchy == true)
+        if (shopView.activeInHierarchy == true)
         {
-            ShopView.SetActive (false);
+            shopView.SetActive (false);
         }
         else
         {
-            ShopView.SetActive(true);
+            shopView.SetActive(true);
         }
     }
     public void IdleAxeBuy()
