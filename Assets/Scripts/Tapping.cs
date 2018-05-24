@@ -10,7 +10,8 @@ public class Tapping : MonoBehaviour {
     [SerializeField] CashManager cashManager;
     [SerializeField] LogsManager logsManager;
     [SerializeField] int cashIncrease = 10;
-    [SerializeField] int logsIncrease = 1;
+    [SerializeField] int logsIncreaseMin = 1;
+	[SerializeField] int logsIncreaseMax = 3;
     [SerializeField] float secondsToSell = 1;
     public Text hitsText;
     public Text logsText;
@@ -52,7 +53,7 @@ public class Tapping : MonoBehaviour {
     }
     public void LogsIncrease()
     {
-        logsManager.CurrentLogs += logsIncrease;
+		logsManager.CurrentLogs += Random.Range(logsIncreaseMin, logsIncreaseMax);
         logsText.text = "Logs: " + logsManager.CurrentLogs.ToString();
 
     }

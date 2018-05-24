@@ -1285,8 +1285,9 @@ MonoBehaviour:
   hits: 0
   cashManager: {fileID: 1245273355}
   logsManager: {fileID: 1245273356}
-  cashIncrease: 10
-  logsIncrease: 1
+  cashIncrease: 1
+  logsIncreaseMin: 1
+  logsIncreaseMax: 3
   secondsToSell: 2
   hitsText: {fileID: 537031}
   logsText: {fileID: 966543510}
