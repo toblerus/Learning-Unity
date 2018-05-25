@@ -784,7 +784,7 @@ GameObject:
   - component: {fileID: 943729681}
   - component: {fileID: 943729680}
   m_Layer: 0
-  m_Name: Tree
+  m_Name: "Treesomethingasdopsdkopsdfjkp\xFC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1178,7 +1178,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1245273358}
-        m_MethodName: ShopView
+        m_MethodName: shopView
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

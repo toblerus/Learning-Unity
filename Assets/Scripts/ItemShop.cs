@@ -22,10 +22,14 @@ public class ItemShop : MonoBehaviour {
     {
         if (ShopView.activeInHierarchy == true)
         {
+<<<<<<< HEAD
             ShopView.SetActive(false);
 
             ShopView.SetActive (false);
 
+=======
+            shopView.SetActive (false);
+>>>>>>> parent of 14d6347... Renamed tree asset
         }
         else
         {
