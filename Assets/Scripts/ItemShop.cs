@@ -22,7 +22,7 @@ public class ItemShop : MonoBehaviour {
     {
         if (shopView.activeInHierarchy == true)
         {
-            shopView.SetActive (false);
+            shopView.SetActive(false);
         }
         else
         {
