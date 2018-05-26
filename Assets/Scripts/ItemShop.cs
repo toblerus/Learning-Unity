@@ -10,6 +10,7 @@ public class ItemShop : MonoBehaviour {
     public Tapping theTappingScript;
     public GameObject ShopView;
     public GameObject IdleAxeBuyButton;
+    public GameObject AxeModelInScene;
     public Text hitsText;
     public Text logsText;
     public Text cashText;
@@ -34,6 +35,7 @@ public class ItemShop : MonoBehaviour {
         if (cashManager.CurrentCash >= 50)
         {
             IdleAxeBuyButton.SetActive(false);
+            AxeModelInScene.SetActive(true);
             cashManager.CurrentCash -= 50;
             cashText.text = "Cash: " + cashManager.CurrentCash.ToString() + "$";
             InvokeRepeating("IdleAxeFunction", 0f, idleAxeSpeed);
