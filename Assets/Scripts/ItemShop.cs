@@ -46,4 +46,17 @@ public class ItemShop : MonoBehaviour {
     {
         theTappingScript.TreeHit();
     }
+
+	public void Buy("Insert class here") //Maybe add a tag to the button, that states, which Item I want to buy?
+	{
+		if (cashManager.CurrentCash >= InsertedClass.price)
+		{
+			if (InsertedClass.currentLevel == upgradeLevelMax)
+			{
+			IdleAxeBuyButton.SetActive(false);
+			}
+			cashManager.CurrentCash -= InsertedClass.price;
+			cashText.text = "Cash: " + cashManager.CurrentCash.ToString() + "$";
+
+		}
 }

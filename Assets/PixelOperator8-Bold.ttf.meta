@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5d1a8e9b3cd360b47b36efd206a4a927
-timeCreated: 1526725780
+guid: 613fc18a568e5484eb88955c297a54b9
+timeCreated: 1527532256
 licenseType: Free
 TrueTypeFontImporter:
   externalObjects: {}
@@ -10,9 +10,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Industrial Revolution
+  fontName: Pixel Operator 8
   fontNames:
-  - Industrial Revolution
+  - Pixel Operator 8
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
