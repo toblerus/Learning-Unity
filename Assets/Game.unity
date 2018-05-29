@@ -1371,7 +1371,7 @@ MonoBehaviour:
   logsManager: {fileID: 1245273356}
   cashIncrease: 1
   logsIncreaseMin: 1
-  logsIncreaseMax: 3
+  logsIncreaseMax: 4
   secondsToSell: 2
   hitsText: {fileID: 537031}
   logsText: {fileID: 966543510}

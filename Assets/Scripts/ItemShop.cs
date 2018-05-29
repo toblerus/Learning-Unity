@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class ItemShop : MonoBehaviour {
+public class ItemShop : MonoBehaviour
+{
     [SerializeField] float idleAxeSpeed;
     [SerializeField] CashManager cashManager;
     public Tapping theTappingScript;
@@ -17,13 +18,13 @@ public class ItemShop : MonoBehaviour {
 
     private void Start()
     {
-        
+
     }
     public void UpdateShopDisplay()
     {
         if (ShopView.activeInHierarchy == true)
         {
-            ShopView.SetActive (false);
+            ShopView.SetActive(false);
         }
         else
         {
@@ -46,17 +47,4 @@ public class ItemShop : MonoBehaviour {
     {
         theTappingScript.TreeHit();
     }
-
-	public void Buy("Insert class here") //Maybe add a tag to the button, that states, which Item I want to buy?
-	{
-		if (cashManager.CurrentCash >= InsertedClass.price)
-		{
-			if (InsertedClass.currentLevel == upgradeLevelMax)
-			{
-			IdleAxeBuyButton.SetActive(false);
-			}
-			cashManager.CurrentCash -= InsertedClass.price;
-			cashText.text = "Cash: " + cashManager.CurrentCash.ToString() + "$";
-
-		}
 }
